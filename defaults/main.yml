@@ -1,0 +1,4 @@
+# NoMachine
+nomachine_deb_url: "https://www.nomachine.com/free/linux/64/deb"
+nomachine_deb_file: "nomachine.deb"
+nomachine_service_name: "nxserver"
