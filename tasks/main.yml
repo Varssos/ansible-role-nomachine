@@ -1,6 +1,6 @@
 ---
 - name: Check if NoMachine is already installed
-  ansible.builtin.command: dpkg-query -W nomachine
+  ansible.builtin.command: dpkg-query -W {{ nomachine_package_name }}
   register: nomachine_installed
   failed_when: false
   changed_when: false
