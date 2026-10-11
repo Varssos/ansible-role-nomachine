@@ -36,6 +36,17 @@ Override variables if needed:
         nomachine_service_name: "nxserver"
 ```
 
+## Manual setup (without Ansible)
+
+The default download is for 64-bit Linux:
+
+```bash
+curl -fL https://www.nomachine.com/free/linux/64/deb -o /tmp/nomachine.deb
+sudo apt install /tmp/nomachine.deb
+rm /tmp/nomachine.deb
+sudo systemctl enable --now nxserver
+```
+
 ## License
 
 MIT
